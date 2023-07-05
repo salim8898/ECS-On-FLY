@@ -69,3 +69,17 @@ To utilize this solution, follow these steps:
 ![Screenshot](images/vpc.png)
 - AWS ECS Application Design
 ![Screenshot](images/app.png)
+
+
+### Post deployment Facts and Results.
+- ECR Repo
+![Screenshot](images/ecr.png)
+- ECS Cluster
+![Screenshot](images/ecs.png)
+- ALB
+![Screenshot](images/alb.png)
+- URL oputput
+![Screenshot](images/url.png)
+- URL and Query
+![Screenshot](images/query.png)
+
