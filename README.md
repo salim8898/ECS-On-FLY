@@ -67,6 +67,6 @@ To utilize this solution, follow these steps:
 
 - AWS VPC Design
 ![VPC](images/vpc.png)
-
+![Screenshot](images/vpc.png)
 - AWS ECS Application Design
 ![ECS](images/app.png)
