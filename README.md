@@ -32,9 +32,9 @@ The repository is organized as follows:
 
 ```
 - `python-api`: Directory contains build_and_push.sh file
-- `trerraform/`: This directory contains All Terraform files and  modules for creating AWS resources.
-- `ecr`: Seperate entity to create ECR repo to avoid blocker.
-- `stack`: This is the heart of this project contains all ECS and its dependencies modules.
+- `trerraform/`: This directory contains All Terraform files and modules for creating AWS resources.
+- `ecr`: separate entity to create ECR repo to avoid blockers.
+- `stack`: This is the heart of this project and contains all ECS and its dependencies modules.
 - `outputs.tf`: The file where output values from the Terraform modules are defined.
 
 ## Usage
@@ -60,8 +60,5 @@ To utilize this solution, follow these steps:
 
 5. Execute the `terraform/stack` bundle of scripts located in the `terraform/stack` directory using the command `terraform init; terraform apply --auto-approve`. This script runs the Terraform stack to deploy the required infrastructure.
 
-```bash
-./scripts/run_stack.sh
-```
 
-**Note:** Before running the Terraform commands, make sure you have valid AWS credentials configured using the AWS CLI.
+**Note:** Before running the Terraform commands, make sure you have valid AWS credentials configured using the AWS CLI and user should have access to provisiong and configure ECR, ECS, CloudWatch, ALB, VPC, Endpoints and IAM roles provisioning acecss.
