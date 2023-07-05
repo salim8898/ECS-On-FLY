@@ -65,10 +65,8 @@ To utilize this solution, follow these steps:
 
 ### Architecture design breakdown in system-wise InfraStack and ECS Application Stacks
 
-- AWS  VPC Design
-![Image Description](images/vpc.png)
-
+- AWS VPC Design
+![VPC](images/vpc.png)
 
 - AWS ECS Application Design
-![Image Description](images/app.png)
-
+![ECS](images/app.png)
