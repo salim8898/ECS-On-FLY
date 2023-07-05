@@ -62,3 +62,11 @@ To utilize this solution, follow these steps:
 
 
 **Note:** Before running the Terraform commands, make sure you have valid AWS credentials configured using the AWS CLI and user should have access to provisiong and configure ECR, ECS, CloudWatch, ALB, VPC, Endpoints and IAM roles provisioning acecss.
+
+### Architecture design breakdown in system-wise InfraStack and ECS Application Stacks
+
+- AWS Infrastructure and VPC Design
+    ![Example Image](images/infra.png)
+
+- AWS ECS Application Desgin
+    ![Example Image](images/infra.png)
