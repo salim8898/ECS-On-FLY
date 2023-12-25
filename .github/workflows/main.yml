@@ -1,0 +1,21 @@
+name: AWSCostPredict
+on:
+  push:
+    branches: [ "main" ]
+    
+jobs:
+  AWSCostPredict:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Predict cost
+        uses: salim8898/AWS-Cost-Predictor@v1.0.0
+        with:
+          iac_path: terraform/stack
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        # continue-on-error: true
